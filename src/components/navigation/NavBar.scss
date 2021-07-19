@@ -1,0 +1,118 @@
+$drawerWidth: 250px;
+
+.root {
+    display: flex;
+}
+
+.appBar {
+    z-index: 10;
+    transform: translateX(0px);
+}
+
+.appBarShift {
+    margin-left: $drawerWidth;
+    transform: translateX($drawerWidth - 45px);
+    z-index: 9;
+}
+
+.menuButton {
+    margin-right: 36px;
+}
+
+.hide {
+    display: none;
+}
+
+.drawer {
+    width: $drawerWidth;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.drawerOpen {
+    width: $drawerWidth;
+}
+
+.drawerClose {
+    overflow-x: hidden;
+    z-index: 9;
+    width: 60px;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 3;
+}
+
+.componentAlways {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
+    z-index: 1;
+    // background-color: #0B0C10;
+    background-color: #1F2833;
+}
+
+.componentDrawerOpen {
+    margin-left: 60px;
+}
+
+.componentDrawerClose {
+    margin-left: $drawerWidth;
+}
+
+.navBarStickBottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottomNavWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomNavComponentColor {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+    z-index: 1;
+    // background-color: #051622;
+    background-color: #1F2833;
+}
+
+.navTitle {
+    flex-grow: 1;
+    text-align: left;
+    color: #C5C6C7;
+}
+
+.buttonColor {
+    color: #C5C6C7
+}
+
+.headingOne {
+    color: #66FCF1;
+}
+
+.content {
+    color: #45A29E;
+}
+
+.swipeAbleComponentColor {
+    background-color: #1F2833;
+}
+
+.sortMenuColor {
+    background-color: #222629;
+}
